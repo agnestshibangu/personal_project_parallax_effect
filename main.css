@@ -5,26 +5,17 @@
 
 body {
     min-height: 1500px;
+    width: 100vh;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.container img {
-    position: absolute;
+
+ .container  {
+   
     top: 0; 
     left: 0; 
     width: 100%;
     height: 100%;
-    object-fit: cover;
     pointer-events: none;
 
 }
@@ -33,11 +24,156 @@ body {
 #background {
     background: url("images/background.png");
     background-attachment: fixed;
-    
-    top: 0; 
-    left: 0; 
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: auto; 
+}
+
+#background2 {
+    background: url("images/background2.png");
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: auto; 
+    animation: sky 10s ease infinite;
+    opacity: 1;
+}
+
+@keyframes sky {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+#window {
+
+    position: fixed;
+    width: 100%;
+    height: 1500vh;
+    object-fit: cover; 
+    z-index: 999;
+}
+
+#windowImg {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-    pointer-events: none;
+    
+}
+
+#planet {
+    left: 50px;
+    margin-left: 700px;
+    margin-top: 50px;
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    z-index: 1;
+    transform: translateY(-100px);
+    transform: scale(1.2);
+    animation: planet 4s ease-in-out infinite;
+}
+
+@keyframes planet {
+    0% {
+        transform: translateY(0px);
+        transform: scale(1.1);
+    }
+    50% {
+        transform: translateY(-30px);
+        transform: scale(1.2);
+    }
+    100% {
+        transform: translateY(0px);
+        transform: scale(1.1);
+    }
+}
+
+#wing {
+    margin-top: 300px;
+    margin-left: 290px;
+    position: absolute;
+    z-index: 4;
+    zoom: 0.8;
+    animation: wing 5s ease-in-out infinite;
+    transform: translateY(20px);
+}
+
+@keyframes wing {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+
+}
+
+
+#cloud1 {
+    position: absolute;
+    margin-left: 454px;
+    margin-top: 286px;
+    z-index: 2;
+    animation : cloud1 5s ease-in-out infinite;
+    transform: translateX(20px);
+}
+
+@keyframes cloud1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#cloud2 {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 229px;
+    z-index: 3;
+}
+
+#cloud3 {
+    position: absolute;
+    z-index: 3;
+    margin-left: 451px;
+    margin-top: 500px;
 }
