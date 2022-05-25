@@ -99,12 +99,11 @@ body {
 
 
 #planet {
-    left: 50px;
-    margin-left: 700px;
-    margin-top: 50px;
+    left: 53%;
+    top: 9%;
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 250px;
+    height: 250px;
     z-index: 1;
     transform: translateY(-100px);
     transform: scale(1.2);
@@ -127,8 +126,9 @@ body {
 }
 
 #wing {
-    margin-top: 300px;
-    margin-left: 290px;
+    /* margin-top: 300px; */
+    left: 125px;
+    top: 400px;
     position: absolute;
     z-index: 4;
     zoom: 0.8;
@@ -154,8 +154,6 @@ body {
 
 #cloud1 {
     position: absolute;
-    margin-left: 454px;
-    margin-top: 286px;
     z-index: 2;
     animation : cloud1 5s ease-in-out infinite;
     transform: translateX(20px);
@@ -186,4 +184,24 @@ body {
     z-index: 3;
     margin-left: 451px;
     margin-top: 220px;
+}
+
+
+@media (max-width: 768px) {
+
+#planet {
+    left: 50%;
+    top: 10%;
+    width: 170px;
+    height: 170px;
+}
+
+#wing {
+    width: 500px;
+    height: 500px;
+    top: 10px;
+    left: 144px;
+}
+
+
 }
