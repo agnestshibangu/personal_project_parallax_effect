@@ -2,21 +2,24 @@
     margin: 0; 
     padding: 0;
 }
-
+/* 
 body {
-    min-height: 1500px;
-    width: 100vh;
-}
+   
+} */
 
 
 
  .container  {
-   
+    
+    height: fit-content;
+    width: 100%;
     top: 0; 
     left: 0; 
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: fit-content;
+    pointer-events: none; */
 
 }
 
@@ -72,21 +75,29 @@ body {
 }
 
 
-
+/* 
 #window {
 
     position: fixed;
     width: 100%;
-    height: 1500vh;
+    height: 100vh;
     object-fit: cover; 
     z-index: 999;
-}
+} */
 
 #windowImg {
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
-    
+  
+    width: 100%;
+    height: 1500vh; */
+    /* object-fit: cover;  */
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
 }
+
 
 #planet {
     left: 50px;
