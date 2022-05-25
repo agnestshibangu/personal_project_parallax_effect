@@ -161,6 +161,9 @@ body {
     z-index: 2;
     animation: cloud1 5s ease-in-out infinite;
     transform: translateX(20px);
+    top: 570px;
+    left: 280px;
+    width: 800px;
 }
 
 @keyframes cloud1 {
@@ -201,6 +204,16 @@ body {
     
     }
 
+    #cloud1 {
+        top: 644px;
+        width: 400px;
+    left: 318px;
+    }
+
+    #wing {
+        left: 198px;
+    }
+
 }
 
 
@@ -224,6 +237,12 @@ body {
         width: 50%;
         left: 215px;
         top: 573px;
+    }
+
+    #cloud1 {
+        top: 562px;
+        width: 400px;
+        left: 185px;
     }
 
 
